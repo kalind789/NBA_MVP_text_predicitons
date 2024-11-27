@@ -30,4 +30,3 @@ The goal of this project is to build a model that predicts the NBA MVP using Twi
 ## Further Goals
 
 1. Enhance predictions by pairing sentiment analysis with player statistics.
-2. Broaden the analysis of social media by integrating Twitter sentiment with other sources like player stats for improved accuracy.
