@@ -1,17 +1,33 @@
-# NBA_MVP_text_predicitons
+# NBA MVP Text Predictions
 
 ## What is the project?
-In this project I want to build a model that is able to predict the NBA's MVP using articles. The people who vote for MVP are media personnel. This means that the articles written around the time of the MVP voting should be a good prediction of who will win the MVP. 
+The goal of this project is to build a model that predicts the NBA MVP using Twitter data. Media personnel vote for MVP, making social media discussions around the voting period valuable predictors of the award.
+
+---
 
 ## How do I plan to do the project?
-- Web scrape articles from BleacherReport, ESPN, and other similar outlets.
-- Clean and tokenize data.
-- FineTune BERT on the data.
-- Use Named Entity Recognition to see how frequently a player in mentioned.
-- Use Named Entity Recognition to get the average sentiment for that player.
-- Use the prev two steps in order to predict top 5 players.
+
+1. **Collect Twitter Data**:
+   - Use the Twitter API to gather tweets from February to April each year.
+   - Filter tweets with relevant keywords such as "NBA" and "MVP" and include tweets from professional accounts.
+   - Save tweets in a database for processing.
+
+2. **Clean and Preprocess Data**:
+   - Tokenize and preprocess text from tweets.
+
+3. **Fine-Tune BERT**:
+   - Fine-tune BERT on the preprocessed Twitter data for sentiment analysis.
+
+4. **Named Entity Recognition (NER)**:
+   - Identify how frequently players are mentioned in tweets.
+   - Compute average sentiment scores for each player using sentiment analysis.
+
+5. **Predict Top Players**:
+   - Combine NER results and sentiment analysis to predict the top 5 players for MVP.
+
+---
 
 ## Further Goals
-- Pair the sentiment analysis with player stats to get even better predictions.
-- Use twitter data to see what is being said on these apps as they are very relavent as well.
-  
+
+1. Enhance predictions by pairing sentiment analysis with player statistics.
+2. Broaden the analysis of social media by integrating Twitter sentiment with other sources like player stats for improved accuracy.
